@@ -7,8 +7,6 @@ Route::get('/portafolio', 'PortafolioController@index')->name('portafolio');
 Route::view('/contact', 'contact')->name('contact');
 
 
-//Route::resource('Proyectos', 'PortafolioController');
-
 
 
 
