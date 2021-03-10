@@ -1,11 +1,14 @@
 <?php
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Route;
+
+//App::setLocale('es'); cambiar idioma
 
 Route::view('/', 'home')->name('home');
 Route::view('/about', 'about')->name('about');
 Route::get('/portafolio', 'PortafolioController@index')->name('portafolio');
 Route::view('/contact', 'contact')->name('contact');
 
+Route::post('/contact' , 'MensajeController@store');
 
 
 
@@ -34,8 +37,9 @@ Route::view('/contact', 'contact')->name('contact');
 
 
 
-//Route::get('/', function () {
-    //return view('welcome');
+
+//Rout::get('/', function () {
+    //return view('welcome');e
 
 
 //Route::get('/', function(){
