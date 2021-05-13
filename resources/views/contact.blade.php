@@ -7,7 +7,7 @@
 <!-- Buscar una traduccion con esas llaves, si no lo encuentra mostrat la cadena de caracteres  -->
 
 
-<form method="POST" action= "{{ route ('contact')}}" >
+<form method="POST" action= "{{ route ('messages.store')}}" >
 
 	@CSRF
 
